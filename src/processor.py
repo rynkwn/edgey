@@ -15,7 +15,9 @@ def preprocessing(img):
 	im = Image.open(img).convert("L")
 	return im
 
-def processing():
+def processing(img):
+	# type: (Image) -> Image
+	""""""
 	pass
 
 def produce_edged_image(src, dest):
@@ -23,11 +25,15 @@ def produce_edged_image(src, dest):
 	"""Creates an edged image at dest."""
 	im = preprocessing(src)
 	processing(im)
+	
+	im.show()
+
+	im.save(dest)
+
 
 def main(src, dest):
 	# type: (Text, Text) -> None
-	pass
+	produce_edged_image(src, dest)
 
 if __name__ == "__main__":
-	# main()
-	pass
+	main("res/duck.jpg", "res/edged_duck.jpg")
