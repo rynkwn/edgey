@@ -14,7 +14,7 @@ def produce_edged_image(src, dest, cleaner, edge_detector):
 
 def main(src, dest, cleaner, edge_detector):
 	# type: (Text, Text, Cleaner, Detector) -> None
-	produce_edged_image(src, dest. cleaner, edge_detector)
+	produce_edged_image(src, dest, cleaner, edge_detector)
 
 if __name__ == "__main__":
-	main("res/duck.jpg", "res/edged_duck.jpg", Cleaner(), Detector())
+	main("res/duck.jpg", "res/edged_duck.jpg", Cleaner, Detector)
