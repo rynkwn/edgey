@@ -25,7 +25,7 @@ class DummyDetector(Detector):
 	def naive_smoother(img):
 		# type: (Image) -> Image
 		"""Go through the image with a naive smoother"""
-		return img.filter(ImageFilter.SMOOTH)
+		return img.filter(ImageFilter.GaussianBlur())
 	
 	@staticmethod
 	def detect(img):
